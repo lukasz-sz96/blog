@@ -10,7 +10,7 @@ const Home = ({ articles }) => {
   return (
     <div>
       <Head>
-        <title>News App</title>
+        <title>Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

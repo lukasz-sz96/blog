@@ -8,7 +8,7 @@ export default NextAuth({
     Providers.Credentials({
       name: "Credentials",
       credentials: {
-        username: { label: "Username", type: "text", placeholder: "jsmith" },
+        username: { label: "Username", type: "text", placeholder: "admin" },
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
