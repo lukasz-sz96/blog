@@ -24,7 +24,7 @@ const Create = () => {
         imageUrl.endsWith(".jpeg")
       ) {
         const doesTitleExist = await axios.get(
-          `http://${window.location.host}/api/post`,
+          "https://blog-tau-mauve.vercel.app/api/post",
           {
             params: {
               title: title,
@@ -32,7 +32,7 @@ const Create = () => {
           }
         );
         if (!doesTitleExist.data.isDuplicated) {
-          await axios.post(`http://${window.location.host}/api/post`, {
+          await axios.post("https://blog-tau-mauve.vercel.app/api/post", {
             title: title,
             content: content,
             imageUrl: imageUrl,
